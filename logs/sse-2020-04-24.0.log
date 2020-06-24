@@ -1,0 +1,377 @@
+00:05:10.337 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @63210ms
+00:05:10.789 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:05:10.870 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4675d3{/,null,AVAILABLE}
+00:05:10.950 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@61614b12{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:05:10.951 [main] INFO  org.eclipse.jetty.server.Server - Started @63830ms
+00:06:20.040 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @21337ms
+00:06:20.306 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:06:20.432 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4675d3{/,null,AVAILABLE}
+00:06:20.452 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@57934222{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:06:20.454 [main] INFO  org.eclipse.jetty.server.Server - Started @21754ms
+00:07:07.314 [qtp1706872079-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:07:20.646 [qtp1706872079-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:07:22.082 [qtp1706872079-17] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:08:27.187 [qtp1706872079-15] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:08:42.739 [qtp1706872079-16] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:08:42.891 [qtp1706872079-16] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-ring-response triggered", :context {:response nil, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x75a578ea "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 05:08:42 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x3ff14689 "io.pedestal.http.servlet.FnServlet@3ff14689"], :headers {"user-agent" "curl/7.58.0", "accept" "*/*", "host" "0.0.0.0:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x248407f7 "Request(GET //0.0.0.0:8080/k3s-apply-service)@248407f7"], :path-info "/k3s-apply-service", :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x110516a3 "io.pedestal.http.route$url_for_routes$fn__9608@110516a3"], :uri "/k3s-apply-service", :server-name "0.0.0.0", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x1c5381be "HttpInputOverHTTP@1c5381be[c=0,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[io.pedestal.http.route$url_for_routes$fn__9608 0x110516a3 "io.pedestal.http.route$url_for_routes$fn__9608@110516a3"]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x60969998 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@60969998"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346 0x143b548a "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346@143b548a"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x75a578ea "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 05:08:42 GMT\r\n\r\n"], :route {:path-parts ["k3s-apply-service"], :path-params {}, :interceptors [#Interceptor{:name :server-sent-events.service/k3s-apply-service-handler}], :path "/k3s-apply-service", :method :get, :path-re #"/\Qk3s-apply-service\E", :route-name :server-sent-events.service/k3s-apply-service-handler, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x71d68ba0 "clojure.core$constantly$fn__4614@71d68ba0"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x3ff14689 "io.pedestal.http.servlet.FnServlet@3ff14689"], :servlet-request #object[org.eclipse.jetty.server.Request 0x248407f7 "Request(GET //0.0.0.0:8080/k3s-apply-service)@248407f7"], :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x110516a3 "io.pedestal.http.route$url_for_routes$fn__9608@110516a3"], :io.pedestal.interceptor.chain/execution-id 5, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x61cc7fb0 "org.eclipse.jetty.servlet.ServletHolder$Config@61cc7fb0"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x7a61554f "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@7a61554f"]}, :line 252}
+clojure.lang.ExceptionInfo: Interceptor Exception: Wrong number of args (0) passed to: PersistentArrayMap
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:33)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:55)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:42)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:152)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:129)
+	at io.pedestal.interceptor.chain$process_all$fn__8687.invoke(chain.clj:165)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:163)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:159)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:212)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:206)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:356)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:366)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__12371.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:845)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:583)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: clojure.lang.ArityException: Wrong number of args (0) passed to: PersistentArrayMap
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:28)
+	at server_sent_events.service$k3s_apply_service_handler.invokeStatic(service.clj:131)
+	at server_sent_events.service$k3s_apply_service_handler.invoke(service.clj:124)
+	at io.pedestal.interceptor$eval168$fn__169$fn__170.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:52)
+	... 38 common frames omitted
+00:08:42.906 [qtp1706872079-16] INFO  i.p.http.impl.servlet-interceptor - {:msg "sending error", :message "Internal server error: exception", :line 214}
+00:10:09.415 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @19111ms
+00:10:09.676 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:10:09.736 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4675d3{/,null,AVAILABLE}
+00:10:09.764 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@29023fb0{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:10:09.765 [main] INFO  org.eclipse.jetty.server.Server - Started @19465ms
+00:11:06.318 [qtp1706872079-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:12:57.931 [qtp1706872079-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:14:24.337 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @17570ms
+00:14:24.572 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:14:24.619 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4675d3{/,null,AVAILABLE}
+00:14:24.637 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@2bd548ef{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:14:24.638 [main] INFO  org.eclipse.jetty.server.Server - Started @17874ms
+00:14:56.755 [qtp1706872079-13] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:15:00.139 [qtp1706872079-16] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:15:02.116 [qtp1706872079-11] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:15:02.676 [qtp1706872079-15] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:15:03.183 [qtp1706872079-13] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:15:11.700 [qtp1706872079-11] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:16:08.972 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @21853ms
+00:16:09.430 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:16:09.503 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4675d3{/,null,AVAILABLE}
+00:16:09.527 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@57934222{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:16:09.528 [main] INFO  org.eclipse.jetty.server.Server - Started @22413ms
+00:16:14.248 [qtp1706872079-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:16:16.900 [qtp1706872079-17] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:16:54.477 [qtp1706872079-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:17:35.347 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @20707ms
+00:17:35.653 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:17:35.719 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4675d3{/,null,AVAILABLE}
+00:17:35.739 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@29023fb0{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:17:35.741 [main] INFO  org.eclipse.jetty.server.Server - Started @21103ms
+00:17:50.016 [qtp1706872079-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:17:52.066 [qtp1706872079-17] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:17:59.707 [qtp1706872079-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:18:00.656 [qtp1706872079-15] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:19:47.016 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @18540ms
+00:19:47.282 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:19:47.376 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3b4675d3{/,null,AVAILABLE}
+00:19:47.414 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3561c333{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:19:47.415 [main] INFO  org.eclipse.jetty.server.Server - Started @18942ms
+00:19:50.818 [qtp1706872079-17] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:19:53.608 [qtp1706872079-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:19:57.016 [qtp1706872079-11] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:19:57.795 [qtp1706872079-15] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:19:58.432 [qtp1706872079-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:19:59.753 [qtp1706872079-11] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:20:01.120 [qtp1706872079-13] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:23:30.323 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @38603ms
+00:40:13.600 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @72150ms
+00:40:14.662 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+00:40:14.758 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@64a3d839{/,null,AVAILABLE}
+00:40:14.840 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@48b80009{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+00:40:14.844 [main] INFO  org.eclipse.jetty.server.Server - Started @73399ms
+00:40:41.882 [qtp207266115-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:40:58.080 [qtp207266115-17] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:51:27.283 [qtp207266115-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+00:51:39.191 [qtp207266115-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+00:52:26.727 [qtp207266115-18] INFO  io.pedestal.http - {:msg "GET /get-pods", :line 78}
+00:52:48.509 [qtp207266115-17] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:11:01.041 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @29961ms
+01:11:01.592 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:11:01.664 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@15cf25ce{/,null,AVAILABLE}
+01:11:01.886 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@74679397{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:11:01.887 [main] INFO  org.eclipse.jetty.server.Server - Started @30812ms
+01:11:34.073 [qtp1817177617-14] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:11:35.066 [qtp1817177617-14] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-ring-response triggered", :context {:response nil, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x6c360ce "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 06:11:33 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x221cd5f5 "io.pedestal.http.servlet.FnServlet@221cd5f5"], :headers {"user-agent" "curl/7.58.0", "accept" "*/*", "host" "0.0.0.0:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x5a742a35 "Request(GET //0.0.0.0:8080/k3s-get-pods)@5a742a35"], :path-info "/k3s-get-pods", :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x3cd5c7a2 "io.pedestal.http.route$url_for_routes$fn__9608@3cd5c7a2"], :uri "/k3s-get-pods", :server-name "0.0.0.0", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x58f0416b "HttpInputOverHTTP@58f0416b[c=0,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[io.pedestal.http.route$url_for_routes$fn__9608 0x3cd5c7a2 "io.pedestal.http.route$url_for_routes$fn__9608@3cd5c7a2"]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x56e5676f "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@56e5676f"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346 0x156db978 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346@156db978"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x6c360ce "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 06:11:33 GMT\r\n\r\n"], :route {:path-parts ["k3s-get-pods"], :path-params {}, :interceptors [#Interceptor{:name :server-sent-events.service/k3s-get-pods-handler}], :path "/k3s-get-pods", :method :get, :path-re #"/\Qk3s-get-pods\E", :route-name :server-sent-events.service/k3s-get-pods-handler, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x2053ff0b "clojure.core$constantly$fn__4614@2053ff0b"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x221cd5f5 "io.pedestal.http.servlet.FnServlet@221cd5f5"], :servlet-request #object[org.eclipse.jetty.server.Request 0x5a742a35 "Request(GET //0.0.0.0:8080/k3s-get-pods)@5a742a35"], :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x3cd5c7a2 "io.pedestal.http.route$url_for_routes$fn__9608@3cd5c7a2"], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x2979f9fa "org.eclipse.jetty.servlet.ServletHolder$Config@2979f9fa"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x303f3c26 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@303f3c26"]}, :line 252}
+clojure.lang.ExceptionInfo: Interceptor Exception: clojure.core$promise$reify__7005 cannot be cast to java.lang.String
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:33)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:55)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:42)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:152)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:129)
+	at io.pedestal.interceptor.chain$process_all$fn__8687.invoke(chain.clj:165)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:163)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:159)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:212)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:206)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:356)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:366)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__12371.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:845)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:583)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: clojure.core$promise$reify__7005 cannot be cast to java.lang.String
+	at cheshire.core$parse_string.invokeStatic(core.clj:209)
+	at cheshire.core$parse_string.invoke(core.clj:194)
+	at cheshire.core$parse_string.invokeStatic(core.clj:204)
+	at cheshire.core$parse_string.invoke(core.clj:194)
+	at server_sent_events.service$k3s_get_pods_handler.invokeStatic(service.clj:143)
+	at server_sent_events.service$k3s_get_pods_handler.invoke(service.clj:136)
+	at io.pedestal.interceptor$eval168$fn__169$fn__170.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:52)
+	... 38 common frames omitted
+01:11:35.074 [qtp1817177617-14] INFO  i.p.http.impl.servlet-interceptor - {:msg "sending error", :message "Internal server error: exception", :line 214}
+01:14:07.302 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @15743ms
+01:14:07.548 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:14:07.642 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@15cf25ce{/,null,AVAILABLE}
+01:14:07.662 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@a979f7f{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:14:07.663 [main] INFO  org.eclipse.jetty.server.Server - Started @16108ms
+01:14:21.571 [qtp1817177617-17] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:14:44.028 [qtp1817177617-14] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:21:18.495 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @15848ms
+01:21:18.738 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:21:18.797 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@15cf25ce{/,null,AVAILABLE}
+01:21:18.819 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@a979f7f{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:21:18.821 [main] INFO  org.eclipse.jetty.server.Server - Started @16178ms
+01:21:23.099 [qtp1817177617-17] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:23:55.458 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @18254ms
+01:23:55.743 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:23:55.797 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7edf6563{/,null,AVAILABLE}
+01:23:55.822 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@596f283{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:23:55.823 [main] INFO  org.eclipse.jetty.server.Server - Started @18620ms
+01:24:10.294 [qtp1339500503-13] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+01:24:16.313 [qtp1339500503-16] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:25:51.361 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @16572ms
+01:25:51.625 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:25:51.673 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7edf6563{/,null,AVAILABLE}
+01:25:51.695 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@b3ace6c{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:25:51.696 [main] INFO  org.eclipse.jetty.server.Server - Started @16911ms
+01:26:12.843 [qtp1339500503-13] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+01:26:15.231 [qtp1339500503-16] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:26:16.968 [qtp1339500503-11] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:26:46.566 [qtp1339500503-14] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:26:48.202 [qtp1339500503-17] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+01:27:21.515 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @15894ms
+01:32:27.787 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @20122ms
+01:32:28.057 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:32:28.109 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7edf6563{/,null,AVAILABLE}
+01:32:28.135 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@40b98a0a{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:32:28.136 [main] INFO  org.eclipse.jetty.server.Server - Started @20476ms
+01:32:31.489 [qtp1339500503-14] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:32:33.317 [qtp1339500503-17] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+01:32:36.537 [qtp1339500503-12] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:32:37.606 [qtp1339500503-15] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:32:39.176 [qtp1339500503-18] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:32:41.578 [qtp1339500503-14] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:39:12.249 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @16189ms
+01:39:12.478 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:39:12.536 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e7a20d5{/,null,AVAILABLE}
+01:39:12.564 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@57934222{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:39:12.566 [main] INFO  org.eclipse.jetty.server.Server - Started @16510ms
+01:39:17.433 [qtp1849401610-13] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+01:39:25.890 [qtp1849401610-16] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+01:41:18.838 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @16804ms
+01:48:19.284 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @15542ms
+01:49:15.469 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @16200ms
+01:49:15.684 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:49:15.738 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e7a20d5{/,null,AVAILABLE}
+01:49:15.759 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@57934222{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:49:15.760 [main] INFO  org.eclipse.jetty.server.Server - Started @16495ms
+01:49:20.322 [qtp1849401610-13] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+01:49:20.661 [qtp1849401610-13] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-ring-response triggered", :context {:response ("yo nigga!" "10.42.0.230" "10.42.0.231" "10.42.0.229" [:status 200] [:body "Ya hecho"]), :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x386fdc6e "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 06:49:20 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x3992e839 "io.pedestal.http.servlet.FnServlet@3992e839"], :headers {"user-agent" "curl/7.58.0", "accept" "*/*", "host" "0.0.0.0:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x3186024a "Request(GET //0.0.0.0:8080/k3s-set-pods)@3186024a"], :path-info "/k3s-set-pods", :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x63ad31d7 "io.pedestal.http.route$url_for_routes$fn__9608@63ad31d7"], :uri "/k3s-set-pods", :server-name "0.0.0.0", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x5b3bbf09 "HttpInputOverHTTP@5b3bbf09[c=0,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[io.pedestal.http.route$url_for_routes$fn__9608 0x63ad31d7 "io.pedestal.http.route$url_for_routes$fn__9608@63ad31d7"]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x74fc9189 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@74fc9189"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346 0x33116300 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346@33116300"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x386fdc6e "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 06:49:20 GMT\r\n\r\n"], :route {:path-parts ["k3s-set-pods"], :path-params {}, :interceptors [#Interceptor{:name :server-sent-events.service/k3s-set-pods-handler}], :path "/k3s-set-pods", :method :get, :path-re #"/\Qk3s-set-pods\E", :route-name :server-sent-events.service/k3s-set-pods-handler, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x1ba23916 "clojure.core$constantly$fn__4614@1ba23916"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x3992e839 "io.pedestal.http.servlet.FnServlet@3992e839"], :servlet-request #object[org.eclipse.jetty.server.Request 0x3186024a "Request(GET //0.0.0.0:8080/k3s-set-pods)@3186024a"], :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x63ad31d7 "io.pedestal.http.route$url_for_routes$fn__9608@63ad31d7"], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x2b0e52ed "org.eclipse.jetty.servlet.ServletHolder$Config@2b0e52ed"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x717bc8d4 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@717bc8d4"]}, :line 252}
+clojure.lang.ExceptionInfo: Interceptor Exception: clojure.lang.LazySeq cannot be cast to clojure.lang.Associative
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:33)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:55)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:42)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:231)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:214)
+	at io.pedestal.interceptor.chain$leave_all$fn__8714.invoke(chain.clj:245)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:243)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:356)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:366)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__12371.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:845)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:583)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: clojure.lang.LazySeq cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792)
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191)
+	at clojure.core$assoc_in.invokeStatic(core.clj:5936)
+	at clojure.core$assoc_in.invokeStatic(core.clj:5936)
+	at clojure.core$assoc_in.invoke(core.clj:5928)
+	at io.pedestal.http.secure_headers$secure_headers$fn__11561.invoke(secure_headers.clj:94)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:648)
+	at clojure.core$apply.invoke(core.clj:641)
+	at io.pedestal.interceptor.helpers$after$fn__8892.invoke(helpers.clj:116)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:52)
+	... 36 common frames omitted
+01:49:20.666 [qtp1849401610-13] INFO  i.p.http.impl.servlet-interceptor - {:msg "sending error", :message "Internal server error: exception", :line 214}
+01:51:12.270 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @16324ms
+01:56:19.504 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @17307ms
+01:56:19.743 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+01:56:19.789 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e7a20d5{/,null,AVAILABLE}
+01:56:19.807 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@57934222{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+01:56:19.808 [main] INFO  org.eclipse.jetty.server.Server - Started @17613ms
+01:56:46.423 [qtp1849401610-13] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+01:56:46.771 [qtp1849401610-13] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-ring-response triggered", :context {:response ("10.42.0.230" "10.42.0.231" "10.42.0.229" [:status 200] [:body "Ya hecho"]), :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x386fdc6e "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 06:56:46 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x3992e839 "io.pedestal.http.servlet.FnServlet@3992e839"], :headers {"user-agent" "curl/7.58.0", "accept" "*/*", "host" "0.0.0.0:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x3186024a "Request(GET //0.0.0.0:8080/k3s-set-pods)@3186024a"], :path-info "/k3s-set-pods", :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x63ad31d7 "io.pedestal.http.route$url_for_routes$fn__9608@63ad31d7"], :uri "/k3s-set-pods", :server-name "0.0.0.0", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x5b3bbf09 "HttpInputOverHTTP@5b3bbf09[c=0,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[io.pedestal.http.route$url_for_routes$fn__9608 0x63ad31d7 "io.pedestal.http.route$url_for_routes$fn__9608@63ad31d7"]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x74fc9189 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@74fc9189"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346 0x33116300 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__12346@33116300"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x386fdc6e "HTTP/1.1 200 \nDate: Fri, 24 Apr 2020 06:56:46 GMT\r\n\r\n"], :route {:path-parts ["k3s-set-pods"], :path-params {}, :interceptors [#Interceptor{:name :server-sent-events.service/k3s-set-pods-handler}], :path "/k3s-set-pods", :method :get, :path-re #"/\Qk3s-set-pods\E", :route-name :server-sent-events.service/k3s-set-pods-handler, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x1ba23916 "clojure.core$constantly$fn__4614@1ba23916"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x3992e839 "io.pedestal.http.servlet.FnServlet@3992e839"], :servlet-request #object[org.eclipse.jetty.server.Request 0x3186024a "Request(GET //0.0.0.0:8080/k3s-set-pods)@3186024a"], :url-for #object[io.pedestal.http.route$url_for_routes$fn__9608 0x63ad31d7 "io.pedestal.http.route$url_for_routes$fn__9608@63ad31d7"], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x2b0e52ed "org.eclipse.jetty.servlet.ServletHolder$Config@2b0e52ed"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x717bc8d4 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@717bc8d4"]}, :line 252}
+clojure.lang.ExceptionInfo: Interceptor Exception: clojure.lang.LazySeq cannot be cast to clojure.lang.Associative
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:33)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:55)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:42)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:231)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:214)
+	at io.pedestal.interceptor.chain$leave_all$fn__8714.invoke(chain.clj:245)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:243)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:356)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:366)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:329)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__12371.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:845)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:583)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: clojure.lang.LazySeq cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792)
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191)
+	at clojure.core$assoc_in.invokeStatic(core.clj:5936)
+	at clojure.core$assoc_in.invokeStatic(core.clj:5936)
+	at clojure.core$assoc_in.invoke(core.clj:5928)
+	at io.pedestal.http.secure_headers$secure_headers$fn__11561.invoke(secure_headers.clj:94)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:648)
+	at clojure.core$apply.invoke(core.clj:641)
+	at io.pedestal.interceptor.helpers$after$fn__8892.invoke(helpers.clj:116)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:52)
+	... 36 common frames omitted
+01:56:46.777 [qtp1849401610-13] INFO  i.p.http.impl.servlet-interceptor - {:msg "sending error", :message "Internal server error: exception", :line 214}
+02:00:44.580 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @16941ms
+02:00:44.814 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+02:00:44.866 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e7a20d5{/,null,AVAILABLE}
+02:00:44.888 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@57934222{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+02:00:44.890 [main] INFO  org.eclipse.jetty.server.Server - Started @17255ms
+02:00:56.842 [qtp1849401610-13] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+02:01:07.613 [qtp1849401610-16] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}

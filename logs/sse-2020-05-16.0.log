@@ -1,0 +1,74 @@
+16:16:29.249 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @24765ms
+16:16:29.600 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+16:16:29.715 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@777a2b88{/,null,AVAILABLE}
+16:16:29.761 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@24869f90{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+16:16:29.763 [main] INFO  org.eclipse.jetty.server.Server - Started @25282ms
+16:25:17.526 [qtp588234229-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+16:30:44.252 [qtp588234229-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+16:34:44.761 [qtp588234229-16] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+16:39:13.384 [qtp588234229-18] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+16:39:39.870 [qtp588234229-14] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+16:40:26.629 [qtp588234229-19] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+16:43:17.173 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @18983ms
+16:43:17.444 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+16:43:17.559 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@777a2b88{/,null,AVAILABLE}
+16:43:17.592 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@a979f7f{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+16:43:17.594 [main] INFO  org.eclipse.jetty.server.Server - Started @19407ms
+16:44:37.492 [qtp588234229-15] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+16:47:33.632 [qtp588234229-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+16:50:37.933 [qtp588234229-18] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+16:50:42.556 [qtp588234229-16] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+16:50:44.699 [qtp588234229-17] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+16:51:04.358 [qtp588234229-14] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+16:51:05.681 [qtp588234229-15] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+16:51:08.394 [qtp588234229-16] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+16:51:09.567 [qtp588234229-18] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+16:51:35.522 [qtp588234229-17] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+17:09:02.354 [qtp588234229-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+17:09:43.808 [qtp588234229-12] INFO  io.pedestal.http - {:msg "GET /k3s-apply-service", :line 78}
+20:07:17.229 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @117356ms
+20:07:21.114 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+20:07:21.319 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@b8be217{/,null,AVAILABLE}
+20:07:22.760 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@75b8ace1{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+20:07:22.762 [main] INFO  org.eclipse.jetty.server.Server - Started @122932ms
+20:07:31.718 [qtp1588723012-14] INFO  io.pedestal.http - {:msg "GET /k3s-apply-statefulset", :line 78}
+20:08:10.161 [qtp1588723012-17] INFO  io.pedestal.http - {:msg "GET /k3s-set-pods", :line 78}
+20:08:24.461 [qtp1588723012-12] INFO  io.pedestal.http - {:msg "GET /k3s-get-pods", :line 78}
+20:09:32.437 [qtp1588723012-15] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+20:12:10.203 [async-dispatch-9] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x2ef8918c "clojure.core.async.impl.channels.ManyToManyChannel@2ef8918c"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+20:12:20.171 [async-dispatch-7] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending heartbeat. Shutting down SSE stream.", :line 140}

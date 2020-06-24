@@ -1,0 +1,610 @@
+03:02:44.447 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @43226ms
+03:02:46.436 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+03:02:46.677 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@46dc6087{/,null,AVAILABLE}
+03:02:46.952 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@76516a07{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+03:02:46.953 [main] INFO  org.eclipse.jetty.server.Server - Started @45744ms
+03:04:04.671 [qtp1850498440-17] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+03:07:47.879 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @136243ms
+03:09:31.835 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+03:11:42.812 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1161786f{/,null,AVAILABLE}
+03:12:08.999 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@42ac6364{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+03:12:11.099 [main] INFO  org.eclipse.jetty.server.Server - Started @398951ms
+03:15:38.474 [qtp596872183-12] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+03:15:59.321 [async-dispatch-7] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x1451926f "clojure.core.async.impl.channels.ManyToManyChannel@1451926f"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627$fn__11629.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+03:16:09.194 [async-dispatch-1] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending heartbeat. Shutting down SSE stream.", :line 140}
+03:16:23.549 [qtp596872183-12] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+03:21:26.183 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @31228ms
+03:21:27.262 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+03:21:27.403 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6c8b680f{/,null,AVAILABLE}
+03:21:27.498 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@73cefc1e{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+03:21:27.499 [main] INFO  org.eclipse.jetty.server.Server - Started @32571ms
+03:21:57.723 [qtp76005115-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+03:24:35.732 [async-dispatch-4] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x64e80fb9 "clojure.core.async.impl.channels.ManyToManyChannel@64e80fb9"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627$fn__11629.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+03:24:45.478 [async-dispatch-7] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending heartbeat. Shutting down SSE stream.", :line 140}
+03:29:34.704 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @30553ms
+03:29:35.585 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+03:29:35.668 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@68a1d32f{/,null,AVAILABLE}
+03:29:35.770 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@71013f84{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+03:29:35.771 [main] INFO  org.eclipse.jetty.server.Server - Started @31632ms
+03:29:43.419 [qtp1388124035-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+03:32:43.176 [async-dispatch-2] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x179d7714 "clojure.core.async.impl.channels.ManyToManyChannel@179d7714"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627$fn__11629.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+03:32:52.802 [async-dispatch-5] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending heartbeat. Shutting down SSE stream.", :line 140}
+03:38:13.548 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @31714ms
+03:38:14.501 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+03:38:14.667 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@65bcc339{/,null,AVAILABLE}
+03:38:14.811 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@25ca19c9{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+03:38:14.813 [main] INFO  org.eclipse.jetty.server.Server - Started @33003ms
+03:38:28.718 [qtp1729548513-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+03:42:27.230 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @62208ms
+03:42:39.180 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+03:42:42.237 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@33dcbbfa{/,null,AVAILABLE}
+03:42:47.785 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@792dc1fc{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+03:42:48.198 [main] INFO  org.eclipse.jetty.server.Server - Started @83193ms
+03:43:03.323 [qtp1356835865-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+05:04:42.950 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @61495ms
+05:04:45.164 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+05:04:45.415 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3369a71f{/,null,AVAILABLE}
+05:04:45.637 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1ae6f819{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+05:04:45.638 [main] INFO  org.eclipse.jetty.server.Server - Started @64204ms
+05:06:25.431 [qtp1241782142-17] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+06:58:11.893 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @31999ms
+06:58:15.817 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+06:58:16.206 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6f422ecc{/,null,AVAILABLE}
+06:58:16.522 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@3794cf63{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+06:58:16.526 [main] INFO  org.eclipse.jetty.server.Server - Started @36640ms
+06:59:00.259 [qtp980554646-16] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+07:08:27.897 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @38033ms
+07:08:28.875 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+07:08:29.036 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@33e888d4{/,null,AVAILABLE}
+07:08:29.156 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@660c584d{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+07:08:29.159 [main] INFO  org.eclipse.jetty.server.Server - Started @39303ms
+07:08:34.898 [qtp1224339926-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+07:11:57.425 [async-dispatch-1] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x179d7714 "clojure.core.async.impl.channels.ManyToManyChannel@179d7714"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627$fn__11629.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval11547$fn__11548$fn__11626$state_machine__5722__auto____11627.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+07:41:43.873 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @26717ms
+07:41:44.559 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+07:41:44.690 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@692cab82{/,null,AVAILABLE}
+07:41:44.945 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@521398c{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+07:41:44.946 [main] INFO  org.eclipse.jetty.server.Server - Started @27820ms
+07:42:10.587 [qtp1071344356-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+07:43:01.420 [async-dispatch-8] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x4596b1fc "clojure.core.async.impl.channels.ManyToManyChannel@4596b1fc"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+07:43:01.432 [async-dispatch-8] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x4596b1fc "clojure.core.async.impl.channels.ManyToManyChannel@4596b1fc"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:43:01.434 [async-dispatch-8] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x4596b1fc "clojure.core.async.impl.channels.ManyToManyChannel@4596b1fc"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:43:01.436 [async-dispatch-8] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x4596b1fc "clojure.core.async.impl.channels.ManyToManyChannel@4596b1fc"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:43:01.437 [async-dispatch-8] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x4596b1fc "clojure.core.async.impl.channels.ManyToManyChannel@4596b1fc"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:43:01.481 [async-dispatch-5] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending event. Shutting down SSE stream.", :line 152}
+07:51:23.189 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @113995ms
+07:51:24.722 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+07:51:25.036 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@692cab82{/,null,AVAILABLE}
+07:51:25.171 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4d0e6adc{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+07:51:25.171 [main] INFO  org.eclipse.jetty.server.Server - Started @115988ms
+07:51:36.670 [qtp1071344356-17] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+07:52:07.563 [async-dispatch-3] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x376d4705 "clojure.core.async.impl.channels.ManyToManyChannel@376d4705"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+07:56:39.376 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @53272ms
+07:56:40.506 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+07:56:40.627 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@692cab82{/,null,AVAILABLE}
+07:56:40.765 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1a7dfc10{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+07:56:40.766 [main] INFO  org.eclipse.jetty.server.Server - Started @54671ms
+07:56:54.345 [qtp1071344356-15] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+07:58:31.815 [async-dispatch-3] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x62adc65a "clojure.core.async.impl.channels.ManyToManyChannel@62adc65a"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+07:58:31.838 [async-dispatch-3] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x62adc65a "clojure.core.async.impl.channels.ManyToManyChannel@62adc65a"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:58:31.847 [async-dispatch-3] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x62adc65a "clojure.core.async.impl.channels.ManyToManyChannel@62adc65a"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:58:31.848 [async-dispatch-3] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x62adc65a "clojure.core.async.impl.channels.ManyToManyChannel@62adc65a"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:58:31.850 [async-dispatch-3] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x62adc65a "clojure.core.async.impl.channels.ManyToManyChannel@62adc65a"]}
+org.eclipse.jetty.io.EofException: Closed
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:383)
+	at clojure.java.io$fn__9554.invokeStatic(io.clj:307)
+	at clojure.java.io$fn__9554.invoke(io.clj:302)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$fn__9584.invokeStatic(io.clj:383)
+	at clojure.java.io$fn__9584.invoke(io.clj:382)
+	at clojure.lang.MultiFn.invoke(MultiFn.java:238)
+	at clojure.java.io$copy.invokeStatic(io.clj:406)
+	at clojure.java.io$copy.doInvoke(io.clj:391)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.http.impl.servlet_interceptor$eval12067$fn__12070.invoke(servlet_interceptor.clj:46)
+	at io.pedestal.http.impl.servlet_interceptor$eval12037$fn__12038$G__12028__12045.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+07:58:31.927 [async-dispatch-8] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending event. Shutting down SSE stream.", :line 152}
+08:04:32.137 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @63187ms
+08:04:33.086 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+08:04:33.275 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@a0b11{/,null,AVAILABLE}
+08:04:33.404 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1ae9a5fb{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+08:04:33.405 [main] INFO  org.eclipse.jetty.server.Server - Started @64736ms
+08:05:01.276 [qtp809411632-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+08:09:54.830 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @120351ms
+08:09:55.832 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+08:09:56.010 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@692cab82{/,null,AVAILABLE}
+08:09:56.145 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@65fa336e{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+08:09:56.146 [main] INFO  org.eclipse.jetty.server.Server - Started @121674ms
+08:10:09.998 [qtp1071344356-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+08:10:36.860 [qtp1071344356-16] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+08:17:56.292 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @49769ms
+08:17:57.177 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.3.8.v20160314
+08:17:57.345 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2b59285c{/,null,AVAILABLE}
+08:17:57.451 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@c38c4a3{HTTP/1.1,[http/1.1, h2c, h2c-17, h2c-16, h2c-15, h2c-14]}{0.0.0.0:8080}
+08:17:57.452 [main] INFO  org.eclipse.jetty.server.Server - Started @50941ms
+08:19:38.782 [qtp1044078581-14] INFO  io.pedestal.http - {:msg "GET /leibniz", :line 78}
+08:24:33.789 [async-dispatch-11] WARN  i.p.http.impl.servlet-interceptor - {:msg "The pipe closed while async writing to the client; Client most likely disconnected.", :line 111, :src-chan #object[clojure.core.async.impl.channels.ManyToManyChannel 0x19f719b9 "clojure.core.async.impl.channels.ManyToManyChannel@19f719b9"]}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:419)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:141)
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:738)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:512)
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:673)
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:722)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179)
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:299)
+	at org.eclipse.jetty.server.Response.flushBuffer(Response.java:1154)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228$fn__12230.invoke(servlet_interceptor.clj:101)
+	at io.pedestal.http.impl.servlet_interceptor$eval12152$fn__12153$fn__12227$state_machine__5722__auto____12228.invoke(servlet_interceptor.clj:101)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invokeStatic(ioc_macros.clj:1012)
+	at clojure.core.async.impl.ioc_macros$run_state_machine.invoke(ioc_macros.clj:1011)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invokeStatic(ioc_macros.clj:1016)
+	at clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke(ioc_macros.clj:1014)
+	at clojure.core.async.impl.ioc_macros$take_BANG_$fn__5738.invoke(ioc_macros.clj:1025)
+	at clojure.core.async.impl.channels.ManyToManyChannel$fn__646$fn__647.invoke(channels.clj:95)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: Broken pipe
+	at sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:47)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:468)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:175)
+	... 25 common frames omitted
+08:24:43.823 [async-dispatch-9] INFO  io.pedestal.http.sse - {:msg "Response channel was closed when sending heartbeat. Shutting down SSE stream.", :line 140}
